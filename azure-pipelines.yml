@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: xldDeploy@7
+  inputs:
+    connectedServiceName: 'localhost'
+    darPackage: 'this.dar'
+    targetEnvironment: 'Environments/local001'
+    rollback: false
 - task: XLDeploy@7
   inputs:
     connectedServiceName: 'localhost'
