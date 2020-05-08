@@ -1,0 +1,20 @@
+# Docker Environment Usage
+
+## Notes
+
+* This blueprint creates a `docker.Engine` infrastructure CI named `docker` and an environment that refers to that infrastructure CI.
+
+{{if .Standalone}}
+## Deploy the blueprint to the XL Platform
+
+To deploy this blueprint to the XebiaLabs DevOps Platform, open up a terminal in the folder where you generated the configuration. Then run:
+
+```plain
+xl apply -f xebialabs.yaml
+```
+
+## Extras
+
+* Instantiate and apply the companion `docker/application` blueprint to create an application that can be deployed to this environment.
+{{end}}
+
