@@ -1,0 +1,28 @@
+apiVersion: xl/v2
+kind: Blueprint
+
+metadata:
+  name: Create infrastructure and environment for Docker
+  description: |
+    This blueprint defines an environment to which Docker containers can be deployed
+  author: XebiaLabs
+  version: 2.0
+  instructions: Read xebialabs/USAGE-environment.md to learn how to use this blueprint.
+
+spec:
+  parameters:
+  - name: DockerURL
+    type: Input
+    prompt: What is the URL of the Docker engine?
+    default: http://dockerproxy:2375
+
+  - name: Standalone
+    value: true
+
+  files:
+  # XebiaLabs
+  - path: xebialabs.yaml
+  - path: README.md
+  - path: xebialabs/USAGE-environment.md.tmpl
+  - path: xebialabs/xld-environment-infrastructure.yaml.tmpl
+  - path: xebialabs/xld-environment-environments.yaml.tmpl
