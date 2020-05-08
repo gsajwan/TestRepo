@@ -1,5 +1,5 @@
 [
- 
+  "docker/environment",
   "docker/application",
   "docker/composable-demo",
   "docker/simple-demo-app"
