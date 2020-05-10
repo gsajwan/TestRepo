@@ -19,7 +19,7 @@ spec:
   - name: Standalone
     value: true
 
-- name: EngineName
+  - name: EngineName
     type: Input
     prompt: What is infra name?
     default: DockerTest
