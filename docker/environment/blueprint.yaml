@@ -19,6 +19,11 @@ spec:
   - name: Standalone
     value: true
 
+- name: EngineName
+    type: Input
+    prompt: What is infra name?
+    default: DockerTest
+    
   files:
   # XebiaLabs
   - path: xebialabs.yaml
